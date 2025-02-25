@@ -83,6 +83,8 @@ int main() {
                 sf::Color color(colorDist(gen), colorDist(gen), colorDist(gen));
 
                 bouncingObjects.emplace_back(radius, position, velocity, color);
+                bouncingObjects.emplace_back(radius, position, -velocity, color);
+
             }
         }
 
